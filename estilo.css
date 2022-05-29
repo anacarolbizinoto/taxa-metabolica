@@ -1,0 +1,46 @@
+body {
+    background: rgb(115, 178, 124);
+    font: normal 15pt courier;
+
+}
+
+header {
+    color: rgb(248, 248, 248);
+    text-align: center;
+}
+
+section {
+    background: whitesmoke;
+    border-radius: 10px; /* deixar a bordinha do quadradinho branco arredondado */
+    padding: 15px; /* espaçamento dentro do padding */
+    width: 500px; /* o tamanho do quadrado branco */
+    margin: auto; /* vai deixar centralizado o quadrado banco */
+    box-shadow: 3px 3px 10px black; /* vai criar uma sombra na caixa de texto */
+
+    background: whitesmoke;
+    border-radius: 10px; /* deixar a bordinha do quadradinho branco arredondado */
+    padding: 15px; /* espaçamento dentro do padding */
+    width: 500px; /* o tamanho do quadrado branco */
+    margin: auto; /* vai deixar centralizado o quadrado banco */
+    box-shadow: 3px 3px 10px black; /* vai criar uma sombra na caixa de texto */
+
+    background: whitesmoke;
+    border-radius: 10px; /* deixar a bordinha do quadradinho branco arredondado */
+    padding: 15px; /* espaçamento dentro do padding */
+    width: 500px; /* o tamanho do quadrado branco */
+    margin: auto; /* vai deixar centralizado o quadrado banco */
+    box-shadow: 3px 3px 10px black; /* vai criar uma sombra na caixa de texto */
+
+}
+
+div {
+    text-align: center; /* vai deixar a foto no centro */
+    padding: 8px; /* vai dar um espaço entre a foto e a mensagem da hora */
+
+}
+
+footer {
+    color: rgb(13, 0, 0); /* vai deixar o texto branco */
+    text-align: center; /* vai deixar o texto centralizado */
+    font-style: italic; /* vai deixar em italico */
+}
