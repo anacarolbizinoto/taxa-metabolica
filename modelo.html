@@ -8,29 +8,84 @@
     <link rel="stylesheet" href="estilo.css">
 
 </head>
-<body onload='carregar()'>
+<body>
     <header>
-        <h1>Saiba sua taxa de metabolismo Basal e Total</h1>
+        <h1>Você sabe quantas calorias gasta por dia?</h1>
+
 
     </header>
 
     <section>
+
+        <div id="teoria">
+
+            <p><strong>Taxa Metabolica Basal</strong>: é a quantidade mínima de energia para que o organismo mantenha as funções vitais (batimentos cardíacos, respiração, etc) em repouso, em um período de 24 horas. </p>
+            <p><strong>Metabolica Total</strong>: é a soma do gasto energético basal com a energia requerida pelo indivíduo ao longo do dia.  </p>
+
+        </div>
+
+
         <div id="dados">
-            Aqui vai aparecer os dados para seleção
+
+            <legend><strong>Sexo:</strong></legend>
+                <p> 
+                    <input type="radio" name="radsex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+
+                    <input type="radio" name="radsex" id="femn">
+                    <label for="femn">Feminino</label>
+                </p>
+
+            <legend><strong>Idade(anos):</strong></legend>
+                <p>
+                    <input type="number" name="txtidade" id="txtidade">
+                </p>
+
+            <legend><strong>Peso(kg):</strong></legend>
+                <p>
+                    <input type="number" name="txtpeso" id="txtpeso">
+                </p>
+
+
+            <legend><strong>Altura(cm):</strong></legend>
+                <p>
+                    <input type="number" name="txtalt" id="txtalt">
+                </p>
+            
+
+            <legend><strong> Nível de Atividade:</strong></legend>
+            
+            <p>
+            <label for="selecao-atividade">Qual o seu nível de atividade?</label>
+
+                <select name="atividade" id="selecao-atividade">
+                <option value="">Selecione uma opção</option>
+                <option value="dog">Sedentário</option>
+                <option value="cat">Atividade Ligeira</option>
+                <option value="hamster">Atividade Moderada</option>
+                <option value="parrot">Atividade Intensa</option>
+                <option value="spider">Atividade Muito Intensa</option>
+                </select>
+            </p>
         </div>
 
-        <div id="basal">
-            Aqui vai calcular a basal
+        <div id="botao-calcular">
+            <input type="button" value="CALCULAR" onclick="calcular()">
         </div>
+        
 
-        <div id="total">
-            Aqui vai calcular a total
+        <div id="resultado">
+            <ul>
+                <li>(Taxa Basal)</li>
+                <li>(Taxa Total)</li>
+            </ul>
+            
         </div>
 
     </section>
 
     <footer>
-        <p>&copy: Ana Carolina Bizinoto</p>
+        <p>&copy AnaCarolinaBizinoto</p>
     </footer>
     <script src="script.js">
 
