@@ -27,12 +27,17 @@
 
         <div id="dados">
 
+            <p>
+                    <label for="nome">Digite aqui o seu nome</label>
+                    <input type="text" id="nome" name="nome">
+            </p>
+
             <legend><strong>Sexo:</strong></legend>
                 <p> 
-                    <input type="radio" name="radsex" id="masc" checked>
+                    <input type="radio" name="sexo" id="masc" checked>
                     <label for="masc">Masculino</label>
 
-                    <input type="radio" name="radsex" id="femn">
+                    <input type="radio" name="sexo" id="femn">
                     <label for="femn">Feminino</label>
                 </p>
 
@@ -60,27 +65,21 @@
 
                 <select name="atividade" id="selecao-atividade">
                 <option value="">Selecione uma opção</option>
-                <option value="dog">Sedentário</option>
-                <option value="cat">Atividade Ligeira</option>
-                <option value="hamster">Atividade Moderada</option>
-                <option value="parrot">Atividade Intensa</option>
-                <option value="spider">Atividade Muito Intensa</option>
+                <option value="sed">Sedentário</option>
+                <option value="atvlig">Atividade Ligeira</option>
+                <option value="atvmod">Atividade Moderada</option>
+                <option value="atvint">Atividade Intensa</option>
+                <option value="atvmt">Atividade Muito Intensa</option>
                 </select>
             </p>
         </div>
 
         <div id="botao-calcular">
-            <input type="button" value="CALCULAR" onclick="calcular()">
+            <input type="button" value="CALCULAR" onclick="calcularBasal()">
         </div>
         
 
-        <div id="resultado">
-            <ul>
-                <li>(Taxa Basal)</li>
-                <li>(Taxa Total)</li>
-            </ul>
-            
-        </div>
+        <div id="resultado">Resultado</div>
 
     </section>
 
