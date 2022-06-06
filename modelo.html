@@ -11,26 +11,18 @@
 <body>
     <header>
         <h1>Você sabe quantas calorias gasta por dia?</h1>
-
-
     </header>
 
     <section>
-
         <div id="teoria">
-
             <p><strong>Taxa Metabolica Basal</strong>: é a quantidade mínima de energia para que o organismo mantenha as funções vitais (batimentos cardíacos, respiração, etc) em repouso, em um período de 24 horas. </p>
             <p><strong>Metabolica Total</strong>: é a soma do gasto energético basal com a energia requerida pelo indivíduo ao longo do dia.  </p>
-
         </div>
-
-
         <div id="dados">
-
-            <p>
+                <p>
                     <label for="nome">Digite aqui o seu nome</label>
                     <input type="text" id="nome" name="nome">
-            </p>
+                </p>
 
             <legend><strong>Sexo:</strong></legend>
                 <p> 
@@ -51,18 +43,14 @@
                     <input type="number" name="txtpeso" id="txtpeso">
                 </p>
 
-
             <legend><strong>Altura(cm):</strong></legend>
                 <p>
                     <input type="number" name="txtalt" id="txtalt">
                 </p>
             
-
             <legend><strong> Nível de Atividade:</strong></legend>
-            
             <p>
             <label for="selecao-atividade">Qual o seu nível de atividade?</label>
-
                 <select name="atividade" id="selecao-atividade">
                 <option value="">Selecione uma opção</option>
                 <option value="sed">Sedentário</option>
@@ -75,10 +63,9 @@
         </div>
 
         <div id="botao-calcular">
-            <input type="button" value="CALCULAR" onclick="calcularBasal()">
+            <input type="button" value="click" onclick="calcular();"/>
         </div>
         
-
         <div id="resultado">Resultado</div>
 
     </section>
@@ -86,9 +73,8 @@
     <footer>
         <p>&copy AnaCarolinaBizinoto</p>
     </footer>
-    <script src="script.js">
 
-        
+    <script src="script.js"> 
     </script>
     
 </body>
