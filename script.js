@@ -1,8 +1,3 @@
-function calcular () {
-    calcularBasal();
-    calcularTotal();
-}
-
 function calcularBasal () {
 
       var idn = window.document.getElementById('nome').value;
@@ -14,17 +9,18 @@ function calcularBasal () {
       var res = window.document.getElementById('resultado');
 
       const btn = document.querySelector('#btn');
+      const output = document.querySelector('#output');
       const radioButtons = document.querySelectorAll('input[name="sexo"]');
-      btn.addEventListener("click", () => {
+      btn.addEventListener('click', () => {
             let sexoSelecionado;
             for (const radioButton of radioButtons) {
                 if (radioButton.checked) {
                     sexoSelecionado = radioButton.value;
-                    console.log((sexoSelecionado == "F"))
-                    if(sexoSelecionado == "F"){
-                        res.innerHTML = `${idn}, sua taxa metabolica basal é de ${tmbF}`
-                    } else if (sexoSelecionado == "M"){
-                        res.innerHTML = `${idn}, sua taxa metabolica basal é de ${tmbM}`
+                    console.log((sexoSelecionado == "femn"))
+                    if(sexoSelecionado == "femn"){
+                        output.innerText = `${idn}, sua taxa metabolica basal é de ${tmbF}`
+                    } else if (sexoSelecionado == "masc"){
+                        output.innerText = `${idn}, sua taxa metabolica basal é de ${tmbM}`
                     } else {
                         alert("erro ao selecionar o sexo");
                     }
@@ -32,6 +28,8 @@ function calcularBasal () {
                 }
             }
         })
+
+        
 }
 
 function calcularTotal () {
@@ -69,4 +67,9 @@ function calcularTotal () {
            return atividadeMuitoItensa
        }
 
+}
+
+function calcular () {
+    calcularBasal();
+    calcularTotal();
 }
